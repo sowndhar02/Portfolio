@@ -354,3 +354,45 @@ button:hover {
 .education-description strong {
   font-weight: bold; /* Make the important text bold */
 }
+#contact {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #555;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #007bff; /* Optional: Change color on hover */
+}
+
+.social-link i {
+  font-size: 1.5rem;
+}
