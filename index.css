@@ -1,62 +1,323 @@
-
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Times New Roman', serif; /* Times New Roman font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  background-color: #f8f9fa; /* Light grayish tone for a clean, professional look */
+}
+/* Header Section Styles */
 
+#home {
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to right, #4A90E2, #9013FE); /* Gradient background */
+  color: white; /* Text color */
+ 
+  display: flex;
+
+}
+
+.logo-container {
+  width: 40%;
+  display: flex; /* Use flexbox for logos and text */
+  align-items: center; /* Center logos vertically */
+}
+
+.header-container {
+  width: 20%;
+  display: flex; /* Use flexbox for the header */
+  justify-content: space-between; /* Space between logos and navigation */
+  align-items: center; /* Center items vertically */
+
+}
+
+.hero-image {
+  width: 40%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.profile-img {
+  width: 50%; 
+  height: 70%;
+  border-radius: 50%; /* Circular image */
+  border: 3px solid white; /* Border color */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.logo-container{
+  width: 100%;
+  height: 30%;
+}
+
+
+.logo {
+  height: 50px; /* Adjust logo height */
+}
+
+.nav-buttons {
+  margin-left: auto; /* Align nav buttons to the right */
+}
+
+.nav-buttons a {
+  color: white; /* Button text color */
+  margin: 0 10px; /* Space between buttons */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Button padding */
+  border: 1px solid white; /* Button border */
+  border-radius: 5px; /* Button border radius */
+  transition: background-color 0.3s, color 0.3s; /* Transition effect */
+}
+
+.nav-buttons a:hover {
+  background-color: white; /* Background color on hover */
+  color: #4A90E2; /* Text color on hover */
+}
+
+.hero-content {
+  margin-top: 20px; /* Space above hero content */
+}
+
+
+
+
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column; /* Stack logo and nav on small screens */
+      align-items: center; /* Center items */
   }
-  
-  header {
-    background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff9e7e, #ffc27d);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+  .logo-container {
+      margin-bottom: 10px; /* Space below logos */
   }
-  
-  header .highlight {
-    color: #ffd700;
-  }
-  
-  section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #ff758c;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .services-grid,
-  .projects-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .service-card,
-  .project-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-  }
-  
-  footer {
-    background: #333;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  
+}
+
+
+
+
+h2 {
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', serif; /* Times New Roman font for titles */
+  font-size: 2em;
+  color: #1e3a8a; /* Deep navy blue for standout headings */
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', serif; /* Consistent with h2 */
+  color: #374151; /* Neutral gray for balance */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-grid,
+.projects-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card,
+.project-card {
+  background: #ffffff; /* Crisp white for cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.hero-content img {
+  width: 50px;
+}
+
+.p-tag {
+  height: 30px;
+  display: auto;
+  justify-content: center;
+}
+
+footer {
+  background: #1e293b; /* Dark slate gray for footer */
+  color: #e5e7eb; /* Light gray for text */
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Button and Link Styles */
+button, a {
+  background: #2563eb; /* Blue for actionable items */
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: 'Times New Roman', serif; /* Times New Roman font for buttons and links */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, a:hover {
+  background: #1d4ed8; /* Darker blue for hover effect */
+}
+
+#contact {
+  padding: 20px;
+  background-color: #f9f9f9; /* Background color */
+}
+
+.container {
+  max-width: 600px; /* Maximum width for the form */
+  margin: 0 auto; /* Center the container */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the fields */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 4px; /* Rounded corners */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+.btn {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 15px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Button border radius */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Font size */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Button hover color */
+}
+/* CSS for Projects Section */
+.container {
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+.projects-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.project-card {
+  background-color: #fff; /* Background color for project cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Prevent content overflow */
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.project-card img {
+  width: 100%; /* Make images responsive */
+  height: 200px; /* Maintain aspect ratio */
+}
+
+.project-card h3 {
+  font-size: 1.5rem; /* Font size for project title */
+  margin: 10px 0; /* Space above and below title */
+}
+
+.project-card p {
+  padding: 0 10px 10px; /* Padding for description */
+  font-size: 1rem; /* Font size for description */
+  color: #333; /* Text color */
+}
+
+/* Navigation styles */
+.navigation {
+  display: flex; /* Use flexbox for navigation */
+  justify-content: center; /* Center the buttons */
+  margin-top: 20px; /* Space above navigation */
+}
+
+button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 15px; /* Button padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Button border radius */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Font size */
+  margin: 0 5px; /* Space between buttons */
+}
+
+button:hover {
+  background-color: #0056b3; /* Button hover color */
+}
+/* CSS for Services Section */
+.services-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between items */
+}
+
+.service-card {
+  background-color: #fff; /* Background color for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding for content */
+  text-align: center; /* Centered text */
+}
+
+.service-card img.service-icon {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.youtube-link {
+  display: inline-block; /* Block for spacing */
+  margin-top: 10px; /* Space above the link */
+  color: #ff0000; /* YouTube red color */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Bold text */
+}
+
+.youtube-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,150 @@
   <link rel="stylesheet" href="index.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-20px);
+      }
+
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 5px #facc15;
+      }
+
+      50% {
+        box-shadow: 0 0 20px #facc15;
+      }
+
+      100% {
+        box-shadow: 0 0 5px #facc15;
+      }
+    }
+
+    /* Applying Animations */
+    
+
+    <!-- .hero-content {
+      flex: 1;
+      text-align: left;
+      padding: 20px;
+    }
+
+    .hero-image {
+      flex: 0.5;
+      text-align: center;
+    } -->
+
+    <!-- .hero-image img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 5px solid #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    } -->
+
+    .highlight {
+      animation: glow 2s infinite alternate;
+    }
+
+    h2 {
+      animation: bounce 1s infinite;
+    }
+
+    a.btn {
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    a.btn:hover {
+      transform: scale(1.1);
+      background: #1e40af;
+    }
+  </style>
 </head>
+
 <body>
   <!-- Header Section -->
   <header id="home">
-    <div class="hero-content">
-      <h1>Hi, I'm <span class="highlight">Sowndhar A</span></h1>
-      <p>Embedded Systems Developer | Coding Enthusiast</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
+    
+
+      <div class="logo-container">
+        <img src="./Image/caliber.png" alt="Caliber Logo" class="logo" style="margin-left: 10px;">
+        <h3 style="display: inline;">Caliber Embedded Technologies India Pvt Ltd</h3>
+
+      </div>
+
+      <div class="hero-content">
+        <h1 style="text-align: center;">Hi, I'm <span class="highlight">Sowndhar A</span></h1>
+        <div class="contact-info" style="text-align: center;">
+          <p>Email: <a href="mailto:a.sowndhar3@gmail.com">a.sowndhar3@gmail.com</a></p>
+          <p>Phone: <i class="fa-solid fa-phone"></i> +91 9363107721</p>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./Image/profile.jpg" alt="Sowndhar A" class="profile-img">
+        <div class="logo-container">
+          <img src="./Image/embeddeds.png" alt="Embedded Logo" class="logo" style="margin-right: 10px;">
+          <h3 style="display: inline;">Embedded Developer</h3>
+        </div>
+  
   </header>
+
 
   <!-- About Section -->
   <section id="about">
     <div class="container">
-      <h2>About Me</h2>
-      <p>
-        A recent graduate with a passion for embedded software development, I specialize in programming languages like C, C++, and Data Structures. I love working on ARM architectures and communication protocols like UART, SPI, and I2C. Through my hands-on projects and continuous learning, I aim to contribute to innovative technological solutions.
+      <h2 class="section-title">About Me</h2>
+      <p class="about-description">
+        As a Bachelor of Engineering graduate in Electrical and Electronics Engineering (EEE) from Excel Engineering
+        College, I have embarked on a rewarding journey in the dynamic world of embedded systems. My academic foundation
+        and hands-on industry experience have shaped my skills and expertise in embedded software development.
       </p>
+
+      <h2 class="sub-title">Professional Experience</h2>
+      <ul class="experience-list">
+        <li>
+          <strong>Trainee - Vector India Pvt Ltd.:</strong> Gained valuable exposure to embedded software development,
+          including ARM architecture, communication protocols, and real-time system concepts.
+        </li>
+        <li>
+          <strong>Embedded Developer - Caliber Embedded Technologies India Pvt. Ltd. (Current):</strong> Collaborating
+          with a talented team to develop high-performance embedded solutions, specializing in real-time systems,
+          low-level programming, and optimizing embedded applications.
+        </li>
+      </ul>
+
+      <h2 class="sub-title">Education</h2>
+      <p class="education-description">B.E. in Electrical and Electronics Engineering, Excel Engineering College</p>
+      <p class="education-description">Advance Embedded System ,Vector India Pvt Ltd </p>
+     
     </div>
   </section>
 
@@ -34,46 +161,75 @@
       <h2>Services</h2>
       <div class="services-grid">
         <div class="service-card">
-          <i class="fas fa-code"></i>
+          <img src="./Image/tutorial.jpg" alt="Embedded Tutorials" class="service-icon"> <!-- Add your image here -->
           <h3>Embedded Tutorials</h3>
           <p>Creating educational content for embedded systems development and coding.</p>
         </div>
         <div class="service-card">
-          <i class="fas fa-project-diagram"></i>
+          <img src="./Image/class.jpg" alt="Project Guidance" class="service-icon">
           <h3>Project Guidance</h3>
           <p>Providing insights and mentorship for innovative tech projects.</p>
         </div>
         <div class="service-card">
-          <i class="fab fa-youtube"></i>
+          <img src="./Image/yt.jpg" alt="Content Creation" class="service-icon"> <!-- Add your image here -->
           <h3>Content Creation</h3>
           <p>Sharing tech knowledge through engaging videos and presentations.</p>
+          <a href="https://www.youtube.com/@EmbeddedCoding-%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B2%E0%AF%8A"
+            target="_blank" class="youtube-link">
+            <i class="fab fa-youtube"></i> Visit My YouTube Channel
+          </a>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Projects Section -->
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="projects-grid">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="Hybrid Wind & Solar Energy">
+        <div class="project-card active">
+          <img src="./Image/hybrid based wind and solar.jpeg" alt="Hybrid Wind & Solar Energy">
           <h3>Hybrid Wind & Solar Energy</h3>
           <p>
-            Developed a vertical axis wind turbine system to generate low-cost electrical energy using wind and solar power. Tools: Fuzzy Logic Toolbox.
+            Developed a vertical axis wind turbine system to generate low-cost electrical energy using wind and solar
+            power. Tools: Fuzzy Logic Toolbox.
           </p>
         </div>
         <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="RF Remote Controlled Switch">
+          <img src="./Image/remote.png" alt="RF Remote Controlled Switch">
           <h3>RF Remote Controlled Switch</h3>
           <p>Presented at the 8th National Conference, demonstrating efficient remote control via RF communication.</p>
         </div>
         <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="Home Automation">
+          <img src="./Image/hma1.jpg" alt="Home Automation">
           <h3>Home Automation</h3>
           <p>
-            Designed a Bluetooth-based system for automating home appliances, emphasizing efficiency and user-friendliness.
+            Designed a Bluetooth-based system for automating home appliances, emphasizing efficiency and
+            user-friendliness.
+          </p>
+        </div>
+        <div class="project-card">
+          <img src="./Image/plant.jpg" alt="Plant Disease Detection using Raspberry Pi Pico">
+          <h3>Plant Disease Detection using Raspberry Pi Pico</h3>
+          <p>
+            Developed a system for detecting plant diseases using image processing techniques on a Raspberry Pi Pico.
+          </p>
+        </div>
+        <div class="project-card">
+          <img src="./Image/plc.jpg" alt="PLC SCADA Based Temperature and Gas Value Control">
+          <h3>PLC SCADA Based Temperature and Gas Value Control</h3>
+          <p>
+            Implemented a PLC SCADA system to monitor and control temperature and gas values using CX Supervisor
+            software, with a designed button and gauge interface.
+          </p>
+        </div>
+        <div class="project-card">
+          <img src="./Image/matlab.jpg" alt="Disease Detection using MATLAB Script">
+          <h3>Disease Detection using MATLAB Script</h3>
+          <p>
+            Utilized MATLAB scripts to analyze data and detect diseases based on predefined algorithms.
           </p>
         </div>
       </div>
@@ -84,28 +240,32 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:a.sowndhar3@gmail.com">a.sowndhar3@gmail.com</a></p>
-      <p>Phone: +91 9363107721</p>
-      <p>
-        LinkedIn: 
-        <a href="https://www.linkedin.com/in/sowndhar-a-92634b23b/" target="_blank">View Profile</a>
-      </p>
+      <form id="contact-form" action="your-server-side-script" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
   </section>
+
 
   <footer>
     <p>© 2024 Sowndhar A. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
