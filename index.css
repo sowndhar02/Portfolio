@@ -17,27 +17,52 @@ body {
   color: white; /* Text color */
  
   display: flex;
+  justify-content: space-evenly;
 
 }
 
 .logo-container {
-  width: 40%;
-  display: flex; /* Use flexbox for logos and text */
-  align-items: center; /* Center logos vertically */
-}
-
-.header-container {
-  width: 20%;
-  display: flex; /* Use flexbox for the header */
-  justify-content: space-between; /* Space between logos and navigation */
-  align-items: center; /* Center items vertically */
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
+
+.hero-content{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.highlight {
+  animation: glow 2s infinite alternate;
+  color: yellow;
+
+}
 .hero-image {
-  width: 40%;
+  width: 35%;
   height: 100%;
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo-img h3{
+  height: 30px;
+  color: black;
+  display: flex;
+  align-items: center;
+ 
+}
+.logo-img img{
+  width: 50px;
 }
 
 .profile-img {
@@ -48,10 +73,6 @@ body {
   object-fit: cover; /* Maintain aspect ratio */
 }
 
-.logo-container{
-  width: 100%;
-  height: 30%;
-}
 
 
 .logo {
@@ -320,4 +341,16 @@ button:hover {
 
 .youtube-link:hover {
   text-decoration: underline; /* Underline on hover */
+}
+.education-container {
+  text-align: center; /* Center the education details */
+}
+
+.education-description {
+  margin: 10px 0; /* Add space between the education details */
+  font-size: 1.1rem; /* Optional: Adjust the font size for better visibility */
+}
+
+.education-description strong {
+  font-weight: bold; /* Make the important text bold */
 }
